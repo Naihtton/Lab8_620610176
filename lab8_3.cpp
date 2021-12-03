@@ -2,7 +2,21 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	
+	if(x == 'A'){
+		x = '[';
+	}
+	if(x == '['){
+		x = x-1;
+		return x;
+	}
+	if(isupper(x)){
+		x = x-1;
+	}
+	else{
+		x = '0';
+	}
+	return x;
 }
 
 int main(){
